@@ -1,0 +1,5 @@
+message(STATUS "Fetching SFML...")
+set(CMAKE_CXX_STANDARD 20)
+set(SFML_BUILD_AUDIO FALSE)
+set(SFML_BUILD_NETWORK FALSE)
+FetchContent_MakeAvailable(SFML)

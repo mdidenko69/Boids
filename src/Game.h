@@ -15,8 +15,8 @@
 class Game {
 private:
     sf::RenderWindow window;
-    int window_width;
-    int window_height;
+    unsigned int window_width;
+    unsigned int window_height;
 
     Flock flock;
     float boidsSize;
