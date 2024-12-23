@@ -11,7 +11,6 @@ add_executable(${PROJECT_NAME}
     src/Boid.cpp
     src/Flock.cpp
     src/Game.cpp
-    src/Pvector.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics)

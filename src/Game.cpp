@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Flock.h"
 #include "Boid.h"
-#include "Pvector.h"
 #include "Game.h"
 #include "SFML/Window.hpp"
 #include "SFML/Graphics.hpp"
 
 // Construct window using SFML
+namespace boids {
+
 Game::Game()
 {
     this->boidsSize = 3.0;
@@ -119,3 +120,5 @@ void Game::Render()
 
     window.display();
 }
+
+} // namespace 

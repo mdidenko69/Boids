@@ -4,6 +4,7 @@
 // =============================================== //
 // ======== Flock Functions from Flock.h ========= //
 // =============================================== //
+namespace boids {
 
 int Flock::getSize()
 {
@@ -27,4 +28,5 @@ void Flock::flocking()
 {
     for (int i = 0; i < flock.size(); i++)
         flock[i].run(flock);
+}
 }

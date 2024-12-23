@@ -3,7 +3,7 @@
 
 int main()
 {
-    Game game;
+    boids::Game game;
     game.Run();
     return 0;
 }

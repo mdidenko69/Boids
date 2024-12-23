@@ -1,11 +1,11 @@
+#ifndef FLOCK_H_
+#define FLOCK_H_
+
 #include <iostream>
 #include <vector>
 #include "Boid.h"
 
-#ifndef FLOCK_H_
-#define FLOCK_H_
-
-
+namespace boids {
 // Brief description of Flock Class:
 // This file contains the class needed to create a flock of boids. It utilizes
 // the boids class and initializes boid flocks with parameters that can be
@@ -23,7 +23,9 @@ public:
     void addBoid(const Boid& b);
     void flocking();
 private:
-    vector<Boid> flock;
+    std::vector<Boid> flock;
 };
+
+} // namespace boids
 
 #endif
